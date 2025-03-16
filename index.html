@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!-- link to CSS file -->
+        <link rel="stylesheet" href="s-header.css">
+        <link rel="stylesheet" href="s-sidebar.css">
+        <link rel="stylesheet" href="s-main.css">
+
+        <!-- link to JS file -->
+        <script src="myJavaScript.js"></script> 
+
+        <!-- link top bar icon -->
+        <link rel="shortcut icon" href="Images/Yin_yang.png" type="image/x-icon">
+        <!-- top bar title -->
+        <title>Kampfsportschule</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Fontfamily: Robot & Montserrat -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="coverImage" id="CoverImage" onclick="openProbetrainingsAnmeldung()"></div>
+
+        <div class="sideBar" id="Probetrainingsanmeldung">
+            
+            <form action="https://formsubmit.co/elias.kb.ehret@gmail.com" method="POST" class="sb-layout">
+                <div>
+                    <h3 style="margin: 0px 0px -50px -110px; cursor: pointer"><a onclick="openProbetrainingsAnmeldung()">✖</a></h3>
+                </div>
+                
+                <div>
+                    <h3 style="font-size: 25px; margin-left: 60px; margin-top: 30px">DEIN KOSTENLOSES <a style="color: #2f79d3; font-size: 30px">PROBETRAINING</a></h3>
+                </div>
+
+                <div>
+                    <p class="sb-inputTitle" style="margin-top: 0px">Dein Vor- & Nachname <a style="color: red">*</a></p>
+                    <input class="sb-inputField" name="Name Elternteil" placeholder="Dein Name">
+                </div>
+                
+                <div>
+                    <p class="sb-inputTitle">Vor- & Nachname des Kindes <a style="color: red">*</a></p>
+                    <input class="sb-inputField" name="Name Kind" placeholder="Name deines Kindes">
+                </div>
+                
+                <div>
+                    <p class="sb-inputTitle">Deine E-Mail Adresse <a style="color: red">*</a></p>
+                    <input class="sb-inputField" name = "E-Mail" placeholder="Deine E-Mail Adresse">
+                </div>
+                
+                <div>
+                    <p class="sb-inputTitle">Deine Telefonnummer <a style="color: red">*</a></p>
+                    <input class="sb-inputField" name = "Telefonnummer" placeholder="Deine Telefonnummer">
+                </div>
+                
+                <div>
+                    <p class="sb-inputTitle">Kurs <a style="color: red">*</a></p>
+                    <select name="kurs" class="sb-inputField" style="width: 255px">
+                        <option value="Minis 4-5 Jahre">Minis 4-5 Jahre</option>
+                        <option value="Kids 6-9 Jahre">Kids 6-9 Jahre</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <p style="font-size:10px; margin-top: 20px; margin-left: 30px">Wir speichern Dein Daten damit wir Dich kontaktieren <br> können - <a href="https://apesign.itch.io/" target="_blank">Datenschutz</a>.</p> 
+                </div>
+                
+                <div>
+                    <button class="sb-anmeldungsbutton" type="submit">
+                        Zum Probetraining anmelden
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <header>
+            
+            <!-- Linker Bereich mit Logo -->
+            <div class="logo">
+                <span>Kampfsportschule</span>
+            </div>
+            
+            <!-- Hamburger menu (nur bei Mobile) -->
+            <div class="hamburger" onclick="openHamburger()">
+                ☰
+            </div>
+            
+            <!-- Rechter Bereich mit Navigation -->
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+        
+        <main>
+            
+            <section class="hero-section">
+                <img src="Images/topBanner_3.jpg" alt="Hero Image">
+                <div class="hero-text">
+                    <h1>Willkommen in der Kampfsportschule</h1>
+                    <p>Erreiche deine Ziele mit uns!</p>
+
+                    <button onclick="openProbetrainingsAnmeldung()">Probetraining</button>
+                </div>
+
+                <div class="hero-description">
+                    <div class="hero-description-element">
+                        <img src="Images/Icon_Brain.png" alt="Konzentration">
+                        <p>Konzentration</p>
+                    </div>
+
+                    <div class="hero-description-element">
+                        <img src="Images/Icon_spaß_1.png" alt="spaß" height="60px">
+                        <p>Spaß</p>
+                    </div>
+
+                    <div class="hero-description-element">
+                        <img src="Images/Respekt.png" alt="Respekt" heigth="60px">
+                        <p>Respekt</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="willkommens-section">
+                
+                <h4>Entfalte das volle Potenzial deines Kindes</h4>
+
+                <h1>Herzlich willkommen in der Kampfsportschule</h1>
+
+                <div class="willkommens-text">
+                    <p>
+                        Möchtest du, dass dein Kind nicht nur körperlich fit ist, sondern auch mentale Stärke und Disziplin entwickelt ? <br><br> Unser Budo Kids Training ist genau das Richtige für 4-9-Jährige, die auf spielerische Weise ihre Fähigkeiten verbessern und gleichzeitig wichtige Lebenskompetenzen erlernen möchten.<br>
+                        Bei uns steht die ganzheitliche Entwicklung deines Kindes im Mittelpunkt. Unsere erfahrenen Trainer leiten die Kinder durch abwechslungsreiche Übungen und Spiele, die nicht nur die körperliche Fitness fördern, sondern auch die Konzentration, Koordination und das Durchhaltevermögen stärken. Genau diese Fähigkeiten können deinem Kind helfen spätere Herausforderungen erfolgreich zu meistern.
+                        Was macht unser Training so besonders ?
+                    </p>
+
+                    <p>
+                        Möchtest du, dass dein Kind nicht nur körperlich fit ist, sondern auch mentale Stärke und Disziplin entwickelt ? <br><br> Unser Budo Kids Training ist genau das Richtige für 4-9-Jährige, die auf spielerische Weise ihre Fähigkeiten verbessern und gleichzeitig wichtige Lebenskompetenzen erlernen möchten.<br>
+                        Bei uns steht die ganzheitliche Entwicklung deines Kindes im Mittelpunkt. Unsere erfahrenen Trainer leiten die Kinder durch abwechslungsreiche Übungen und Spiele, die nicht nur die körperliche Fitness fördern, sondern auch die Konzentration, Koordination und das Durchhaltevermögen stärken. Genau diese Fähigkeiten können deinem Kind helfen spätere Herausforderungen erfolgreich zu meistern.
+                        Was macht unser Training so besonders ?
+                    </p>
+                </div>
+                
+            </section>
+
+            <section class="trailtraining-section" id="">
+
+                <img src="Images/BudoKids2.jpg" alt="">
+
+                <div class="trailtraining-section-container">
+
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/53fdNmuQEEo?si=mpQgqDlA49kzU08f" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe> -->
+
+                    <div class="trailtraining-section-item">
+                        <img src="Images/Icon_telefon.png" alt="" height="100px">
+                        <h2>Quali Call</h2>
+                        <p>Wir rufen dich an und suchen einen passenden Termin für eure erste Schnupperstunde</p>
+                    </div>
+                    <div class="trailtraining-section-item">
+                        <img src="Images/Kick_in_Luft.png" alt="" height="100px">
+                        <h2>Schnupperstunde</h2>
+                        <p>Ihr kommt zu eurem vereinbarten Probetraining vorbei und dein Kind bekommt einen eindruck von unserem Training.</p>
+                    </div>
+                    <div class="trailtraining-section-item">
+                        <img src="Images/Feedback_gespräch.png" alt="" height="100px">
+                        <h2>Feedback</h2>
+                        <p>Nach eurer ersten Stunde werdet ihr von unserem Trainer beraten und über unser Training und Konzept aufgeklärt.</p>
+                    </div>
+                </div>
+                <div class="trailtraining-section-pt">
+
+                    <button onclick="openProbetrainingsAnmeldung()">Probetraining</button>
+
+                </div>
+                
+
+            </section>
+
+            <section class="course-section">
+                
+                <div class="course-section-column">
+    
+                    <a class="course-section-course" href="MiniKurs.html">
+                        
+                        <img src="Images/BudoMinis.jpg" alt="Budo Minis"  height="100px">
+
+                        <div class="course-section-course-description">
+                            <h2>BUDO MINIS</h2> 
+                            <p>4 - 5 Jahren</p>
+                        </div>
+                    </a>
+
+                    <a class="course-section-course" href="MiniKurs.html">
+                        
+                        <img src="Images/BudoKids2.jpg" alt="Budo Minis"  height="100px">
+
+                        <div class="course-section-course-description">
+                            <h2>BUDO KIDS</h2> 
+                            <p>6 - 9 Jahren</p>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </section>
+
+            
+            
+            <section class="contact-section" id="contact">
+
+                <div class="contact-section-icon-container">
+                    <a href=""><img src="Images/Icon_telefon.png" alt="telefon"></a>
+                    <a href=""><img src="Images/Icon_Email.png" alt="telefon"></a>
+                    <a href=""><img src="Images/Icon_Instagram.png" alt="telefon"></a>
+                </div>
+
+            </section>
+
+
+        </main>
+    </body>
+
+</html>

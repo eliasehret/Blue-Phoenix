@@ -1,0 +1,115 @@
+/* Grundlegende Header-Einstellungen */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 50px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo-Bereich */
+.logo {
+    position: relative;
+    width: 250px;
+    height: 100%;
+
+    margin: 0px 0px 0px 60px;
+
+    background: linear-gradient(to bottom right, #2f79d3 50%, transparent 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    clip-path: polygon(0% 0%, 10% 100%, 100% 100%, 90% 0%);
+}
+
+/* Navigation */
+.hamburger{
+    display: none;
+}
+
+nav{
+    display: flex;
+
+    margin: 0px 100px 0px 0px;
+
+    transition: max-height 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #2f79d3;
+}
+
+@media(max-width: 800px){
+    .hamburger{
+        display: block;
+        font-weight: bolder;
+        font-size: larger;
+    }
+    .logo{
+        margin-left: -20px;
+        width: 200px;
+        font-size: 1rem;
+    }
+    nav{
+        position: absolute;
+        top: 100%; /* Direkt unter der Header-Leiste */
+        left: 0;
+        max-height: 0;
+        width: 100%;
+        background: #ffffff;
+
+        overflow: hidden; 
+        
+        transition: max-height .3s ease-in-out 0s;
+
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px 0px 0px 20px;
+    }
+    nav ul li{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 60px;
+    }
+    nav ul li a{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    nav.open{
+        height: 330px;
+        max-height: 330px;
+    }
+}

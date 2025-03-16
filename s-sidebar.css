@@ -1,0 +1,120 @@
+
+.sideBar{
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    left: -400px;
+    background-color: rgb(255, 255, 255);
+    z-index: 14;
+}
+.sideBarOpening {
+    left: calc(0%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    background-color: rgb(255, 255, 255);
+}
+.sideBarClosing {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    background-color: rgb(255, 255, 255);
+    left: -400px;
+}
+.coverImage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.662);
+    z-index: 12;
+
+    visibility: hidden;
+    overflow-x: hidden;
+}
+
+.sb-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 5%;
+    margin-right: 50px;
+}
+.sb-inputTitle{
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.sb-inputField{
+    width: 230px;
+    height: 35px;
+    border-radius: 8px;
+
+    margin-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sb-anmeldungsbutton{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 210px;
+    height: 40px;
+
+    background-color: white;
+    color: #2f79d3;
+    font-weight: bold;
+    font-size: 12px;
+
+    border-radius: 20px;
+    border-color: #2f79d3;
+    border-width: 4px;
+
+    position: relative;
+    z-index: 1;
+
+    animation: rackingAnim 8s ease;
+    animation-iteration-count:infinite;
+}
+.sb-anmeldungsbutton:hover{
+    color: white;
+    cursor: pointer;
+}
+.sb-anmeldungsbutton:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    content: "";
+    background-color: #2f79d3;
+    border-radius: 10px;
+}
+.sb-anmeldungsbutton:hover:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+@keyframes rackingAnim {
+    0%{
+        transform: rotateZ(0);
+    }
+    85%{
+        transform: rotateZ(0deg);
+    }
+    90%{
+        transform: rotateZ(3deg);
+    }
+    95%{
+        transform: rotateZ(-3deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
