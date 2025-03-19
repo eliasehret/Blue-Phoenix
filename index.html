@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="s-main.css">
 
         <!-- link to JS file -->
-        <script src="myJavaScript.js"></script> 
+        <script src="myJavaScript.js" defer></script> 
 
         <!-- link top bar icon -->
         <link rel="shortcut icon" href="Images/Yin_yang.png" type="image/x-icon">
@@ -27,38 +27,38 @@
 
         <div class="sideBar" id="Probetrainingsanmeldung">
             
-            <form action="https://formsubmit.co/elias.kb.ehret@gmail.com" method="POST" class="sb-layout">
+            <form id="Kontaktformular" method="POST" class="sb-layout">
                 <div>
                     <h3 style="margin: 0px 0px -50px -110px; cursor: pointer"><a onclick="openProbetrainingsAnmeldung()">✖</a></h3>
                 </div>
                 
-                <div>
+                <div style="pointer-events: none;">
                     <h3 style="font-size: 25px; margin-left: 60px; margin-top: 30px">DEIN KOSTENLOSES <a style="color: #2f79d3; font-size: 30px">PROBETRAINING</a></h3>
                 </div>
 
                 <div>
-                    <p class="sb-inputTitle" style="margin-top: 0px">Dein Vor- & Nachname <a style="color: red">*</a></p>
-                    <input class="sb-inputField" name="Name Elternteil" placeholder="Dein Name">
+                    <p class="sb-inputTitle" style="margin-top: 0px">Dein Vor- & Nachname</p>
+                    <input class="sb-inputField" name="ElternName" placeholder="Dein Name" required>
                 </div>
                 
                 <div>
-                    <p class="sb-inputTitle">Vor- & Nachname des Kindes <a style="color: red">*</a></p>
-                    <input class="sb-inputField" name="Name Kind" placeholder="Name deines Kindes">
+                    <p class="sb-inputTitle">Vor- & Nachname des Kindes</p>
+                    <input class="sb-inputField" name="KindName" placeholder="Name Deines Kindes" required>
                 </div>
                 
                 <div>
-                    <p class="sb-inputTitle">Deine E-Mail Adresse <a style="color: red">*</a></p>
-                    <input class="sb-inputField" name = "E-Mail" placeholder="Deine E-Mail Adresse">
+                    <p class="sb-inputTitle">Deine E-Mail Adresse</p>
+                    <input class="sb-inputField" name = "email" placeholder="Deine E-Mail Adresse" required>
                 </div>
                 
                 <div>
-                    <p class="sb-inputTitle">Deine Telefonnummer <a style="color: red">*</a></p>
-                    <input class="sb-inputField" name = "Telefonnummer" placeholder="Deine Telefonnummer">
+                    <p class="sb-inputTitle">Deine Telefonnummer</p>
+                    <input class="sb-inputField" name = "Telefonnummer" placeholder="Deine Telefonnummer" required>
                 </div>
                 
                 <div>
-                    <p class="sb-inputTitle">Kurs <a style="color: red">*</a></p>
-                    <select name="kurs" class="sb-inputField" style="width: 255px">
+                    <p class="sb-inputTitle">Kurs</a></p>
+                    <select name="kurs" class="sb-inputField" style="width: 255px" required>
                         <option value="Minis 4-5 Jahre">Minis 4-5 Jahre</option>
                         <option value="Kids 6-9 Jahre">Kids 6-9 Jahre</option>
                     </select>
@@ -156,6 +156,11 @@
 
                 <img src="Images/BudoKids2.jpg" alt="">
 
+                <div class="trailtraining-section-header">
+                    <h1>Euer Erstes Probetraining</h1>
+                    <p>Wir freuen uns auf Euch</p>
+                </div>
+
                 <div class="trailtraining-section-container">
 
                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/53fdNmuQEEo?si=mpQgqDlA49kzU08f" 
@@ -167,19 +172,19 @@
                     </iframe> -->
 
                     <div class="trailtraining-section-item">
-                        <img src="Images/Icon_telefon.png" alt="" height="100px">
-                        <h2>Quali Call</h2>
-                        <p>Wir rufen dich an und suchen einen passenden Termin für eure erste Schnupperstunde</p>
+                        <img src="Images/Icon_telefon2.png" alt="" height="100px">
+                        <h2>1. Terminvereinbarung</h2>
+                        <p>In einem kurzen Telefonat finden wir gemeinsam einen passenden Termin für Euer Schnuppertraining.</p>
                     </div>
                     <div class="trailtraining-section-item">
                         <img src="Images/Kick_in_Luft.png" alt="" height="100px">
-                        <h2>Schnupperstunde</h2>
-                        <p>Ihr kommt zu eurem vereinbarten Probetraining vorbei und dein Kind bekommt einen eindruck von unserem Training.</p>
+                        <h2>2. Schnuppertraining</h2>
+                        <p>Erlebt unser werteorientiertes Kindertraining bei einem kostenlosen Schnuppertraining und macht Euch selbst ein Bild!</p>
                     </div>
                     <div class="trailtraining-section-item">
                         <img src="Images/Feedback_gespräch.png" alt="" height="100px">
-                        <h2>Feedback</h2>
-                        <p>Nach eurer ersten Stunde werdet ihr von unserem Trainer beraten und über unser Training und Konzept aufgeklärt.</p>
+                        <h2>3. Feedback</h2>
+                        <p>Nach Eurer ersten Stunde nimmt sich der Trainer für Euch Zeit und geht auf Eure Wünsche und Bedürfnisse ein.</p>
                     </div>
                 </div>
                 <div class="trailtraining-section-pt">
@@ -193,7 +198,9 @@
 
             <section class="course-section">
                 
-                <div class="course-section-column">
+
+
+                <div class="course-section-container">
     
                     <a class="course-section-course" href="MiniKurs.html">
                         
