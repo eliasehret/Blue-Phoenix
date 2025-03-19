@@ -17,6 +17,8 @@ section{
     width: 100%;
     height: 100vh; /* 100% der Bildschirmhöhe */
     overflow: hidden;
+
+    position: relative;
 }
 
 .hero-section > img{
@@ -29,7 +31,7 @@ section{
 /* Text über dem Bild */
 .hero-text {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -162,8 +164,7 @@ section{
     gap: 100px;
 }
 
-.course-section-column{
-
+.course-section-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -232,7 +233,7 @@ section{
 
 /* How to Probetraining */
 .trailtraining-section{
-    height: 900px;
+    height: 850px;
     width: 100%;
 
     position: relative;
@@ -242,11 +243,46 @@ section{
 
 .trailtraining-section > img{
     width: 100%;
-    height: 100%;
+    height: 850px;
 
     object-fit: cover;
 
     z-index: 0;
+}
+
+.trailtraining-section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 30%;
+
+    position: absolute;
+
+    padding: 0px 0px 0px 0px;
+
+    z-index: 1;
+}
+
+.trailtraining-section-header > h1{
+    position: absolute;
+
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: 900;
+
+    z-index: 1;
+}
+.trailtraining-section-header > p{
+    position: absolute;
+    bottom: 15%;
+
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 900;
+
+    z-index: 1;
 }
 
 .trailtraining-section::after{
@@ -265,12 +301,14 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 20px;
     align-items: center;
+    
     position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
+    bottom: 10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
 }
 
 .trailtraining-section-container > iframe{
@@ -306,6 +344,7 @@ section{
 }
 .trailtraining-section-item > p{
    padding: 0px 20px 0px 20px;
+   text-align: center;
 }
 
 .trailtraining-section-pt{
@@ -330,7 +369,7 @@ section{
 
     cursor: pointer;
 
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bolder;
 
     color: rgb(0, 0, 0);
@@ -408,13 +447,14 @@ section{
     }
 
     .hero-text{
-        position: flex;
-        top: 70%;
+        position: absolute;
+        top: 65%;
+        bottom: 0%;
         left: 50%;
         width: 100%;
         transform: translate(-50%, -50%);
         color: rgb(0, 0, 0);
-        background: rgb(255, 255, 255); /* Dunkler Hintergrund für bessere Lesbarkeit */
+        background: rgb(255, 255, 255);
     }
     .hero-text h1 {
         font-size: 2.5rem;
@@ -434,13 +474,17 @@ section{
     }
 
     .trailtraining-section{
-        
+        height: 1200px;
     }
 
     .trailtraining-section-container{
         flex-direction: column;
         gap: 20px;
         padding: 20px 0px 20px 0px;
+
+        top: 10%;
+
+        height: 60%;
     }
 
     .trailtraining-section-item {
@@ -455,6 +499,11 @@ section{
         background-color: white;
     
         z-index: 1;
+    }
+    .trailtraining-section-header{
+    }
+    .trailtraining-section-pt{
+        bottom: 5%;
     }
 
 
