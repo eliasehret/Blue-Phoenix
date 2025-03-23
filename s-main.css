@@ -250,41 +250,6 @@ section{
     z-index: 0;
 }
 
-.trailtraining-section-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 30%;
-
-    position: absolute;
-
-    padding: 0px 0px 0px 0px;
-
-    z-index: 1;
-}
-
-.trailtraining-section-header > h1{
-    position: absolute;
-
-    color: rgb(0, 0, 0);
-    font-size: 3rem;
-    font-weight: 900;
-
-    z-index: 1;
-}
-.trailtraining-section-header > p{
-    position: absolute;
-    bottom: 15%;
-
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    font-weight: 900;
-
-    z-index: 1;
-}
-
 .trailtraining-section::after{
     content: "";
     position: absolute;
@@ -299,11 +264,10 @@ section{
 
 .trailtraining-section-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
-    align-items: center;
-    
+    flex-direction: column;
+
+    gap: 0px;
+
     position: absolute;
     bottom: 10%;
     left: 15%;
@@ -311,10 +275,46 @@ section{
     height: 80%;
 }
 
-.trailtraining-section-container > iframe{
-    border-radius: 10px; 
 
-    z-index: 2;
+.trailtraining-section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0px;
+
+    width: 100%;
+    height: 20%;
+
+    margin: -20px 0px -100px 0px;
+
+    z-index: 1;
+}
+
+.trailtraining-section-header > h1{
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: 900;
+
+    z-index: 1;
+}
+.trailtraining-section-header > p{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 900;
+
+    z-index: 1;
+}
+
+
+.trailtraining-section-item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 200px 0px 0px 0px;
 }
 
 .trailtraining-section-item {
@@ -339,9 +339,6 @@ section{
 .trailtraining-section-item > img{
    padding: 20px 0px 0px 0px;
 }
-.trailtraining-section-item > h2{
-   
-}
 .trailtraining-section-item > p{
    padding: 0px 20px 0px 20px;
    text-align: center;
@@ -352,10 +349,7 @@ section{
     justify-content: center;
     align-items: center;
 
-    position: relative;
-    bottom: 13%;
-
-    padding: 0px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
 
     z-index: 1;
 }
@@ -442,10 +436,6 @@ section{
         margin: 0px 5% 0px 05%;
         gap: 0;
     }
-
-    .hero-section{
-    }
-
     .hero-text{
         position: absolute;
         top: 65%;
@@ -474,41 +464,38 @@ section{
     }
 
     .trailtraining-section{
-        height: 1200px;
+        height: 1500px;
     }
-
-    .trailtraining-section-container{
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0px 20px 0px;
-
-        top: 10%;
-
-        height: 60%;
-    }
-
-    .trailtraining-section-item {
-        position: relative;
-        bottom: 0;
-        left: 0%;
-        width: 80%;
-        height: 400px;
+    .trailtraining-section > img{
+        width: 100%;
+        height: 1500px;
     
-        border-radius: 10px;
+        object-fit: cover;
     
-        background-color: white;
-    
-        z-index: 1;
+        z-index: 0;
     }
     .trailtraining-section-header{
+        margin-top: -130px;
+    }
+    .trailtraining-section-header > p{
+        margin-top: -10px;
+    }
+    .trailtraining-section-item-container{
+       flex-direction: column;
+       gap: 20px;
+
+       margin: -80px 0px 0px 0px;
+    }
+    .trailtraining-section-item {
+        width: 120%;
     }
     .trailtraining-section-pt{
-        bottom: 5%;
+        margin-top: -50px;
     }
 
 
-    .course-section-column{
-        height:100%;
+    .course-section-container{
+        height: 100%;
 
         flex-direction: column;
     }
