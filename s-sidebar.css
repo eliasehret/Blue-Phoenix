@@ -1,9 +1,9 @@
 
 .sideBar{
-    width: 400px;
+    width: 420px;
     height: 100vh;
     position: fixed;
-    left: -400px;
+    left: -420px;
     background-color: rgb(255, 255, 255);
     z-index: 14;
 
@@ -21,7 +21,7 @@
     -webkit-transition: 1s;
     -moz-transition: 1s;
     background-color: rgb(255, 255, 255);
-    left: -400px;
+    left: -420px;
 }
 .coverImage{
     width: 100%;
