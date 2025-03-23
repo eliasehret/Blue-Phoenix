@@ -47,10 +47,7 @@ document.getElementById("Kontaktformular").addEventListener("submit", async func
         kurs: event.target.kurs.value
     };
 
-    var url = "";
-
-    alert("fetch");
-    return;
+    var url = "https://prod-26.germanywestcentral.logic.azure.com:443/workflows/7229a76a19154f9a9445cc81c13da92b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-_EHtNJ8p7FrV802hBoB4gYMpAi9WhB0ub-TZLczayM";
 
     try {
         const response = await fetch(url, {
@@ -65,9 +62,9 @@ document.getElementById("Kontaktformular").addEventListener("submit", async func
             alert("Formular erfolgreich übermittelt!");
 
             // Clear the form here
-            document.getElementById("Kontaktformular").reset();
+            this.reset();
 
-            location.reload();
+            //location.reload();
         } else {
             const errorData = await response.json();
             alert("Fehler bei der Übermittlung: " + JSON.stringify(errorData));
@@ -77,3 +74,12 @@ document.getElementById("Kontaktformular").addEventListener("submit", async func
     }
 });
 
+//handy zurückbutton
+window.addEventListener("popstate", function (event) {
+    
+    if(sideBarOpen)
+    {
+        openProbetrainingsAnmeldung();
+    }
+
+});
