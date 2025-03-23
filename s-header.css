@@ -20,14 +20,15 @@ header {
 
     margin: 0px 0px 0px 60px;
 
-    background: linear-gradient(to bottom right, #2f79d3 50%, transparent 100%);
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    clip-path: polygon(0% 0%, 10% 100%, 100% 100%, 90% 0%);
+    justify-content: start;
+
+    gap: 20px;
+
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 900;
 }
 
 /* Navigation */
@@ -59,6 +60,7 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 16px;
+    font-weight: 400;
     padding: 8px 12px;
     transition: color 0.3s ease-in-out;
 }
