@@ -40,15 +40,16 @@
     justify-content: center;
     flex-direction: column;
 
-    margin-top: 5%;
-    margin-right: 50px;
+    margin: 0px 50px 0px 50px;
 
-    transform: scale(1.15);
+    transform: scale(1);
+}
+.sb-title{
+    margin-left: 35px;
 }
 .sb-inputTitle{
     margin-bottom: 5px;
     margin-top: 20px;
-    margin-left: 30px;
     font-size: 12px;
     font-weight: bold;
 }
@@ -57,13 +58,11 @@
     height: 35px;
     border-radius: 8px;
 
-    margin-left: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
 .sb-anmeldungsbutton{
     margin-top: 30px;
-    margin-left: 30px;
     width: 210px;
     height: 40px;
 
@@ -120,5 +119,11 @@
     }
     100%{
         transform: rotateZ(0deg);
+    }
+}
+
+@media(max-width: 800px){
+    .sb-layout{
+        transform: scale(1.3);
     }
 }
