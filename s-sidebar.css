@@ -10,7 +10,7 @@
     display: flex;
 }
 .sideBarOpening {
-    left: calc(0%);
+    left: 0px;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -124,6 +124,34 @@
 
 @media(max-width: 800px){
     .sb-layout{
-        transform: scale(1.3);
+        transform: scale(1.2);
+    }
+    .sb-title{
+        margin-left: 15px;
+    }
+
+    .sideBar{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        background-color: rgb(255, 255, 255);
+        z-index: 14;
+    
+        display: flex;
+    }
+    .sideBarOpening {
+        left: calc(0%);
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        background-color: rgb(255, 255, 255);
+    }
+    .sideBarClosing {
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        background-color: rgb(255, 255, 255);
+        left: -100%;
     }
 }
