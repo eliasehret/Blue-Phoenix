@@ -75,6 +75,11 @@
                     </button>
                 </div>
             </form>
+
+            <div id="submit-window" class="submit-window hide">
+                <img src="Images/Bestätigungs_harken_blau.png" alt="flaxi" width="200px">
+                <h3>Deine Anmeldung war erfolgreich!</h3>
+            </div>
         </div>
         
         <header>
@@ -161,6 +166,36 @@
                 
             </section>
 
+            <section class="course-section">
+                
+
+
+                <div class="course-section-container">
+    
+                    <a class="course-section-course" href="MiniKurs.html">
+                        
+                        <img src="Images/BudoMinis.jpg" alt="Budo Minis"  height="100px">
+
+                        <div class="course-section-course-description">
+                            <h2>BUDO MINIS</h2> 
+                            <p>4 - 5 Jahren</p>
+                        </div>
+                    </a>
+
+                    <a class="course-section-course" href="MiniKurs.html">
+                        
+                        <img src="Images/BudoKids2.jpg" alt="Budo Minis"  height="100px">
+
+                        <div class="course-section-course-description">
+                            <h2>BUDO KIDS</h2> 
+                            <p>6 - 9 Jahren</p>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </section>
+
             <section class="trailtraining-section" id="">
 
                 <img src="Images/BudoKids2.jpg" alt="">
@@ -199,38 +234,74 @@
 
             </section>
 
-            <section class="course-section">
-                
+            <!--Beantwortete Fragen-->
+            <div class="fragen-antwort-section">
 
+                <h1>Fragen und Antworten</h1>
 
-                <div class="course-section-container">
-    
-                    <a class="course-section-course" href="MiniKurs.html">
-                        
-                        <img src="Images/BudoMinis.jpg" alt="Budo Minis"  height="100px">
+                <div class="fragen-container">
+                    <div class="frage-item" onclick="openQuestion(this)">
 
-                        <div class="course-section-course-description">
-                            <h2>BUDO MINIS</h2> 
-                            <p>4 - 5 Jahren</p>
+                        <div class="fragen_dropdown">
+                            <h4>Ab wie viel Jahren ist das Training ?</h4>
+                            <img src="Images/Arrow_Down.png" alt="Arrow_Down" width="25px">
                         </div>
-                    </a>
-
-                    <a class="course-section-course" href="MiniKurs.html">
-                        
-                        <img src="Images/BudoKids2.jpg" alt="Budo Minis"  height="100px">
-
-                        <div class="course-section-course-description">
-                            <h2>BUDO KIDS</h2> 
-                            <p>6 - 9 Jahren</p>
+                        <div class="fragen_dropdown-content">
+                            <p>Unsere Kurse sind für Kinder ab 4 Jahren geeignet. Wir haben spezielle Programme, die altersgerechte Übungen und Techniken beinhalten.</p>
                         </div>
-                    </a>
 
+                    </div>
+                    
+                    <div class="frage-item" onclick="openQuestion(this)">
+
+                        <div class="fragen_dropdown">
+                            <h4>Was muss mein Kind zum Training mitbringen ?</h4>
+                            <img src="Images/Arrow_Down.png" alt="Arrow_Down" width="25px">
+                        </div>
+                        <div class="fragen_dropdown-content">
+                            <p>Dein Kind braucht für sein erstes Probetraining lediglich bequeme Sportklamotten und eine gefüllte Trinkflasche. Turnschuhe benötigt ihr nicht, da wir auf Mattenboden Trainieren.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="frage-item" onclick="openQuestion(this)">
+
+                        <div class="fragen_dropdown">
+                            <h4>Wie lange dauert eine Trainingseinheit?</h4>
+                            <img src="Images/Arrow_Down.png" alt="Arrow_Down" width="25px">
+                        </div>
+                        <div class="fragen_dropdown-content">
+                            <p>Die Trainingseinheiten für Kinder dauern in der Regel 45-50 Minuten, abhängig von der Altersgruppe und dem Kurs.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="frage-item" onclick="openQuestion(this)">
+
+                        <div class="fragen_dropdown">
+                            <h4>Kann mein Kind auch ohne Vorkenntnisse starten?</h4>
+                            <img src="Images/Arrow_Down.png" alt="Arrow_Down" width="25px">
+                        </div>
+                        <div class="fragen_dropdown-content">
+                            <p>Absolut! Unsere Programme sind so gestaltet, dass Anfänger genauso gut mitmachen können wie erfahrene Kinder. Jeder wird dort abgeholt, wo er oder sie steht.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="frage-item" onclick="openQuestion(this)">
+
+                        <div class="fragen_dropdown">
+                            <h4>Wie kann ich mein Kind für den Kurs anmelden?</h4>
+                            <img src="Images/Arrow_Down.png" alt="Arrow_Down" width="25px">
+                        </div>
+                        <div class="fragen_dropdown-content">
+                            <p>Die Anmeldung erfolgt über unser Online-Formular <a style="color: blue" onclick="openProbetrainingsAnmeldung()">(klicke hier)</a>. Bei Fragen oder Unsicherheiten helfen wir euch gerne weiter.</p>
+                        </div>
+
+                    </div>
                 </div>
-                
-            </section>
+            </div>
 
-            
-            
             <section class="contact-section" id="contact">
 
                 <div class="contact-section-icon-container">
@@ -241,6 +312,7 @@
 
             </section>
 
+            
 
         </main>
     </body>
