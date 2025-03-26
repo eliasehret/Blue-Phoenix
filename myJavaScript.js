@@ -25,12 +25,11 @@ function openProbetrainingsAnmeldung(){
         //coverImage.style.animation = "fadeInCoverImage .5s ease-out forwards";
         coverImage.style.visibility = "visible";
 
+        document.getElementById("submit-window").classList.add("hide");
+
         sideBarOpen = true;
     }
 }
-
-var g = document.getElementById("Kontaktformular");
-
 
 document.getElementById("Kontaktformular").addEventListener("submit", async function(event){
     event.preventDefault();
@@ -59,7 +58,7 @@ document.getElementById("Kontaktformular").addEventListener("submit", async func
         });
 
         if(response.ok) {
-            alert("Formular erfolgreich übermittelt!");
+            document.getElementById("submit-window").classList.remove("hide");
 
             // Clear the form here
             this.reset();
@@ -73,6 +72,18 @@ document.getElementById("Kontaktformular").addEventListener("submit", async func
         alert("Fehler bei der Übermittlung: " + error.message);
     }
 });
+
+function openQuestion(element){
+
+    var dropdownContent = element.children[1];
+    dropdownContent.classList.toggle("fragen_dropdown-content_open");
+
+    //dropdown Arrow
+    var dropdownFrage = element.children[0];
+    var arrow_down = dropdownFrage.children[1];
+    if(arrow_down.style.transform.includes("scaleY(-1)")) arrow_down.style.transform = "scaleY(1)";
+    else arrow_down.style.transform = "scaleY(-1)";
+}
 
 //handy zurückbutton
 window.addEventListener("popstate", function (event) {
