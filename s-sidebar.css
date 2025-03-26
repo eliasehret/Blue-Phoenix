@@ -122,6 +122,39 @@
     }
 }
 
+
+.submit-window{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+.submit-window > img{
+    animation-name: popUp;
+    animation-duration: .8s;
+}
+
+@keyframes popUp {
+    0%{
+        transform: scale(0);
+    }
+    60%{
+        transform: scale(120%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+
 @media(max-width: 800px){
     .sb-layout{
         transform: scale(1.2);
