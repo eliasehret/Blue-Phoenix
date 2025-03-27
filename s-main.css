@@ -18,6 +18,9 @@ section{
     height: 100vh; /* 100% der Bildschirmhöhe */
     overflow: hidden;
 
+    display: flex;
+    flex-direction: column;
+
     position: relative;
 
     margin-bottom: -60px;
@@ -628,8 +631,8 @@ section{
     }
 
     .hero-description{
-        margin-top: 5%;
         margin: 0px 0px 0px 0px;
+        justify-content: center;
     }
     .hero-description-element{
         min-width: 130px;
