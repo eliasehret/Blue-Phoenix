@@ -8,6 +8,7 @@
     z-index: 14;
 
     display: flex;
+    justify-content: center;
 }
 .sideBarOpening {
     left: 0px;
@@ -46,6 +47,8 @@
 }
 .sb-title{
     margin-left: 35px;
+    display: flex;
+    align-items: center;
 }
 .sb-inputTitle{
     margin-bottom: 5px;
@@ -157,10 +160,12 @@
 
 @media(max-width: 800px){
     .sb-layout{
-        transform: scale(1.2);
+        padding: 5vh 0;
     }
     .sb-title{
         margin-left: 15px;
+        display: flex;
+        align-items: center;
     }
 
     .sideBar{
