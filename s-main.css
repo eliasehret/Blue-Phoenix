@@ -636,13 +636,17 @@ section{
         scale: .7;
     }
 
-    
-
-
     .course-section-container{
         height: 100%;
 
         flex-direction: column;
+    }
+
+    .fragen_dropdown{
+        height: 40px;
+    }
+    .fragen_dropdown > img{
+        display: none;
     }
 
 
