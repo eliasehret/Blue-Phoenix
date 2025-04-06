@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- link to CSS file -->
+        <link rel="stylesheet" href="s-header.css">
+        <link rel="stylesheet" href="s-sidebar.css">
+        <link rel="stylesheet" href="s-main.css">
+        <link rel="stylesheet" href="s-courseplan.css">
+
+        <!-- link to JS file -->
+        <script src="myJavaScript.js" defer></script> 
+
+        <!-- link top bar icon -->
+        <link rel="shortcut icon" href="Images/Flaxi_Profil.png" type="image/x-icon">
+        <!-- top bar title -->
+        <title>Blue Phoenix - Kursplan</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Fontfamily: Robot & Montserrat -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+            
+        <!-- Linker Bereich mit Logo -->
+        <div class="logo">
+            <img src="Images/Flaxi_Profil.png" alt="Flaxi_Profil" height="90%">
+            <span>Blue Phoenix - Kursplan</span>
+        </div>
+        
+        <!-- Hamburger menu (nur bei Mobile) -->
+        <div class="hamburger" onclick="openHamburger()">
+            ☰
+        </div>
+        
+        <!-- Rechter Bereich mit Navigation -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <div class="background">
+
+            <h2>AKTUELLER KURSPLAN</h2>
+
+            <div class="courseplan">
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Montag</th>
+                        <th>Dienstag</th>
+                        <th>Mittwoch</th>
+                        <th>Donnerstag</th>
+                        <th>Freitag</th>
+                    </tr>
+                    <tr>
+                        <td>15:00 - 15:45</td>
+                        <td class="kurs" href="BudoMinis.html">
+                            <p>15:00 - 15:45</p>
+                            <h4>Budo Minis 4-5 J.</h4>
+                            <div style="background-color: rgb(255, 166, 0);"></div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>16:00 - 16:50</td>
+                        <td></td>
+                        <td class="kurs" href="BudoKids.html">
+                            <p>16:00 - 16:50</p>
+                            <h4>Budo Kids 6-10 J.</h4>
+                            <div style="background-color: rgb(33, 248, 0);"></div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                
+            </div>
+        </div>
+
+        <section class="contact-section" id="contact">
+
+            <div class="contact-section-icon-container">
+                <a href=""><img src="Images/Icon_telefon.png" alt="telefon"></a>
+                <a href=""><img src="Images/Icon_Email.png" alt="telefon"></a>
+                <a href="https://www.instagram.com/kampfsportschule_blue_phoenix/" target="_blank"><img src="Images/Icon_Instagram.png" alt="telefon"></a>
+            </div>
+
+        </section>
+
+    </main>
+<body>
+    
+</body>
+</html>

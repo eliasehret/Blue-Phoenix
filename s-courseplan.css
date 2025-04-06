@@ -1,0 +1,105 @@
+.background{
+    height: 100vh;
+    background: linear-gradient(to bottom, #2285ff 50%, white 50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 0px 50px 0px;
+}
+
+.background > h2{
+    font-size: 3rem;
+
+    color: white;
+
+    margin: 50px 0px 50px 0px;
+}
+
+
+.courseplan{
+    height: 600px;
+    width: 80%;
+    background-color: white;
+
+    border-radius: 20px;
+    border: solid #2285ff 4px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+th, td {
+    /*border: 1px solid black;*/
+
+    text-align: center;
+    padding: 10px;
+
+    width: 16.66%;
+    height: 33.33%;
+}
+th:first-child, td:first-child {
+    width: 12%; /* Erste Spalte kleiner */
+} 
+th {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+.kurs {
+    position: relative;
+
+    background-color: #2285ff;
+    border-radius: 5px;
+    color: white;
+
+    transition: background-color .2s ease-in-out;
+}
+.kurs:hover{
+    background-color: #0073ff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.kurs > p{
+    color: rgb(255, 197, 37);
+
+    position: absolute;
+    top: 20%;
+    left: 16%;
+}
+.kurs > h4{
+    position: absolute;
+    top: 30%;
+    left: 16%;
+
+    color: white;
+}
+.kurs > div{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    height: 10px;
+    width: 100%;
+}
+
+@media(max-width: 1000px){
+
+    .courseplan{
+        width: 100%;
+        height: 500px;
+    }
+    .td {
+        width: 1%;
+        font-size: 1rem;
+    }
+}
